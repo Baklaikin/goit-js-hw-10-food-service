@@ -9,10 +9,10 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"EzL3":[function(require,module,exports) {
 "use strict";var e=u(require("./menu.json")),t=u(require("./templates/template.hbs"));function u(e){return e&&e.__esModule?e:{default:e}}const r=document.querySelector(".js-menu");r.innerHTML=(0,t.default)(e.default);
 },{"./menu.json":"mA8c","./templates/template.hbs":"CLs1"}],"m3VC":[function(require,module,exports) {
-const e=document.querySelector("body"),t=localStorage.getItem("theme");console.log(t);const o=e.classList.contains("light-theme"),l=document.querySelector("#theme-switch-toggle"),a=localStorage.setItem("theme","dark-theme"),m=localStorage.setItem("theme","light-theme");console.log(t),e.classList.add(t),"dark-theme"===t&&(l.checked=!0),l.addEventListener("change",t=>{!0===l.checked?(e.classList.toggle("light-theme"),e.classList.toggle("dark-theme"),localStorage.removeItem("theme"),localStorage.setItem("theme","dark-theme"),console.log(localStorage.getItem("theme"))):(e.classList.toggle("light-theme"),localStorage.removeItem("theme"),e.classList.toggle("dark-theme"),localStorage.setItem("theme","light-theme"),console.log(localStorage.getItem("theme")))});
+const e=document.querySelector("body"),t=localStorage.getItem("theme"),l=document.querySelector("#theme-switch-toggle"),a={LIGHT:"light-theme",DARK:"dark-theme"};"dark-theme"===t&&(l.checked=!0,e.classList.add(a.DARK)),e.classList.add(t),l.addEventListener("change",t=>{!0===l.checked?(e.classList.toggle("light-theme"),e.classList.toggle("dark-theme"),localStorage.removeItem("theme"),localStorage.setItem("theme",a.DARK)):(e.classList.toggle("light-theme"),localStorage.removeItem("theme"),e.classList.toggle("dark-theme"),localStorage.setItem("theme",a.LIGHT))});
 },{}],"clu1":[function(require,module,exports) {
 
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=s(require("./markup")),r=s(require("./theme"));function s(e){return e&&e.__esModule?e:{default:e}}require("./sass/main.scss");
 },{"./markup":"EzL3","./theme":"m3VC","./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.047e1789.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.fd46ea57.js.map
